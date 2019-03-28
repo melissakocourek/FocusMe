@@ -1,0 +1,273 @@
+/* BODY CONTENT */
+
+body {
+  background-color: white;
+
+}
+
+
+
+
+.content{
+  max-width: 960px;
+  height:auto;
+  padding-bottom: 2.5rem;
+  border: 5px solid #cccc;
+  margin: 0 auto;
+}
+
+.container-fluid {
+position:relative;
+height: auto;
+min-height:100vh;
+margin: 0 auto;
+background-color: white;
+font-family: 'Thasadith', sans-serif;
+
+}
+
+h2 {
+  text-align:center;
+  padding-top:10px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+h3{
+  font-size: 16px;
+}
+.row {
+margin: 0 auto;
+text-align:center;
+}
+
+.col {
+margin: 0 auto;
+text-align:center;
+
+}
+.display-8{
+text-align:center;
+}
+
+/* NAVBAR */
+.navbar-brand {
+  font-weight: lighter;
+}
+.nav-item{
+  font-family: 'Thasadith', sans-serif;
+  color:black;
+}
+.collapse .navbar-collapse{
+  position:center;
+}
+.nav-link {
+  color:black;
+}
+.justify-content-end {
+margin: 0 auto;
+}
+
+/* JUMBOTRON */
+
+#jumbotron-dates {
+  background: url('../images/whitecard.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  font-family: 'Thasadith', sans-serif;
+  margin:0 auto;
+  height:350px;
+}
+
+#jumbotron-sessions {
+  background: url('../images/whitedesk.jpg');
+  background-size: cover;
+  font-family: 'Thasadith', sans-serif;
+  margin:0 auto;
+  height: 350px;
+}
+
+#jumbotron  {
+  background: url('../images/banner2.jpg');
+  background-size: cover;
+  font-family: 'Thasadith', sans-serif;
+  margin:0 auto;
+  height: 350px;
+  }
+
+  .lead {
+    background: white;
+    opacity: .80;
+  }
+  .intro {
+    padding:20px;
+  }
+  .my-4{
+    padding: 20px;
+  }
+  #intro-aside {
+    width: 50%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float:right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-family: 'Thasadith', sans-serif;
+    color: #29627e;
+
+  }
+  aside {
+    width: 50%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-family: 'Thasadith', sans-serif;
+    color: #29627e;
+}
+
+aside > p {
+    margin: .5rem;
+
+}
+
+aside > h1 {
+  color: black;
+  margin-top: 20px;
+  font-size: 2em;
+  text-align:center;
+}
+aside > ul {
+  text-align:center;
+  color: darkslategrey;
+ 
+}
+
+/* TIMER BUTTONS */ 
+#TimeHeader {
+  text-align:center;
+  font-size: 18px;
+}
+#timer {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+#start {
+  position: relative;
+  margin-top: 80px;
+  padding: 10px;
+}
+
+#stop {
+  position: relative;
+  margin-top: 80px;
+  padding: 10px;
+}
+#reset {
+  position: relative;
+  margin-top: 80px;
+  padding: 10px;
+}
+.col-6 {  /*Time Log */
+  position: relative;
+  height: auto;
+  font-size: 12px;
+}
+
+
+/* Inspiration Quotes */
+.card-header{
+  text-align:center;
+}
+.blockquote {
+  text-align: center;
+}
+.blockquote-footer {
+  position: relative;
+  height: auto;
+}
+
+/* TIMER COUNTDOWN */ 
+
+#Exam-Info {
+  float: right;
+}
+#clockdiv{
+  margin-top: 20px;
+  text-align:Center;
+}
+
+.counter .title {
+  color:black;
+  font-size: 16px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  font-family: 'Thasadith', sans-serif;
+  font-weight: 500;
+}
+.counter .sq {
+  color: black;
+  display: inline-block;
+  text-align: center;
+}
+.counter .sq .bord {
+  border-bottom: 1px solid black;
+  padding: 12px 15px;
+  margin-right: 18px;
+  text-indent: 0px;
+  font-family: 'Thasadith', sans-serif;
+  font-size: 20px;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  width: 54px;
+}
+.counter .sq span {
+  clear: both;
+  display: block;
+  text-indent: -15px;
+  font-size: 10px;
+  font-size: 1rem;
+  font-family: 'Thasadith', sans-serif;
+}
+.well {
+text-align: center;
+}
+
+.form-group{
+  text-align:center;
+  max-width: 500;
+}
+#formGroupExampleInput{
+  margin: 0 auto;
+  text-align:center;
+  max-width: 50%;
+
+}
+legend {
+  font-size: 16px;
+}
+
+.date {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align:center;
+}
+
+#wrap {
+  height: auto;
+  width:auto;
+}
+
+footer {
+  position: absolute; 
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  height: 2.5rem;
+}
+

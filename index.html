@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Focus ME</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Caveat|Comfortaa|Exo|Gloria+Hallelujah|Indie+Flower|Kalam|News+Cycle|Poiret+One|Shadows+Into+Light|Thasadith" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+<body >
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+    <style type="text/css">
+    #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 100;
+    }
+    .cnt223 a{
+    text-decoration: none;
+    }
+    .popup{
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    position: fixed;
+    z-index: 101;
+    }
+    .cnt223{
+    min-width: 600px;
+    width: 600px;
+    min-height: 150px;
+    margin: 100px auto;
+    background:burlywood;
+    position: relative;
+    z-index: 103;
+    padding: 15px 35px;
+    border-radius: 5px;
+
+    }
+    #welcome {
+      text-align: center;
+      clear: both;
+        color: #555555;
+        /* text-align: justify; */
+        font-size: 30px;
+        font-family: 'Thasadith';
+
+    }
+    .cnt223 p{
+      text-align:center;
+    clear: both;
+        color: #555555;
+        /* text-align: justify; */
+        font-size: 20px;
+        font-family: 'Thasadith';
+    }
+    .cnt223 p a{
+    color: white;
+    font-weight: thin;
+    font-family: 'Thasadith';
+    }
+    .cnt223 .x{
+    float: right;
+    height: 35px;
+    left: 22px;
+    position: relative;
+    top: -25px;
+    width: 34px;
+    }
+    .cnt223 .x:hover{
+    cursor: pointer;
+    }
+    </style>
+    <script type='text/javascript'>
+      $(function(){
+        if (localStorage.getItem('returningUser') === 'true') {
+          return;
+        }
+        var overlay = $('<div id="overlay"></div>');
+        overlay.appendTo(document.body);
+        $('.popup').show();
+        $('.close').click(function(){
+          $('.popup').hide();
+          overlay.remove();
+          localStorage.setItem('returningUser', 'true');
+          return false;
+        });
+
+        $('.x').click(function(){
+          $('.popup').hide();
+          overlay.remove();
+          localStorage.setItem('returningUser', 'true');
+          return false;
+        });
+      });
+    </script>
+    <div class='popup'>
+    <div class='cnt223'>
+    <h1 id="welcome">Welcome to FocusMe!</h1>
+    <p> -- The #1 help app to insure you ace your next big exam --
+
+    
+    <br/>
+    <br/>
+    <a href='' class='close'>Close</a>
+    </p>
+    </div>
+    </div>
+<!-- As a link -->
+<nav class="navbar navbar-light bg-light .navbar-expand{-sm|-md|-lg|-xl">
+        <a class="navbar-brand" href="index.html">FocusMe</a>
+          <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Tips.html">Tips</a>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dashboard
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="sessions.html">Sessions</a>
+                          <a class="dropdown-item" href="dates.html">Exam Info</a>
+                        </div>
+                      </li>
+              </ul>
+              <nav class="navbar navbar-light bg-light" >
+                  <form class="form-inline" action="Googlemap.html">
+                    <button class="btn btn-sm btn-outline-secondary">Study Spots</button>
+                  </form>
+                </nav>
+        
+      </nav>
+    <div class="jumbotron jumbotron-fluid" id="jumbotron">
+      
+        <aside id="intro-aside">
+            <p class="lead">A helpful studying assistant that tracks your study time, 
+                remembers your next exam’s details, and provides resources and inspirational 
+                quotes to help you work.</p>
+         </aside>
+        <h1 class="display-8"></h1>
+        <hr class="my-4">
+         <br>
+         <br>
+    </div>
+    <div class="container-fluid">
+      <br>
+      <br>
+      <h1 class="display-8">Timer</h1>
+      <br>
+        <div class="content"> 
+            <div class="card">
+                <div class="card-header">
+                  Quote
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p id="quote-body">Inspirational Quote here</p>
+                    <div id="quote-footer" class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></div>
+                  </blockquote>
+                </div>
+              </div>
+        <div class="row">
+            <div class="col-sm-5 col-md-6">
+                <div id="timer">0:00</div>
+              <button type="button" class="btn btn-outline-secondary" id="start">Start</button>
+              <button type="button" class="btn btn-outline-secondary" id="reset">Reset</button>
+              <button type="button" class="btn btn-outline-secondary" id="stop">Stop</button>
+          </div>
+          <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+
+              <aside>
+                  <h1 id ="TimeHeader">Time Log</h1>
+                  <br>
+                    <ul id="timeLog">
+                    </ul>
+                  </aside>
+          </div>
+        </div>
+      </div>
+        
+            <footer>
+                <p>Copyright © 2019 </p>
+                  </footer>
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/timer.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
