@@ -33,3 +33,6 @@ A helpful studying assistant that tracks your study time, remembers your next ex
 - Bootstrap
 - Moment.js
 - Firebase
+
+
+check it out here: https://melissakocourek.github.io/FocusMe/
